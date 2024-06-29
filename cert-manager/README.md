@@ -1,4 +1,4 @@
-## Verify policy enforcement, mtLS and authorization policy:
+## Verify policy enforcement, mtLS
 
 ### Exec into the Pod
 Exec into the pod. Use the following command to access the pod:
