@@ -90,7 +90,7 @@ So now we have the Istio component running in a cluster that automatically injec
    kubectl port-forward kiali-64c4548985-tbm4b  8080:20001 -n istio-system
    ```
    
-   ![](kiali.png)
+   ![](kiali_ss.png)
 
    
 
