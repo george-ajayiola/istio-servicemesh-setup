@@ -1,18 +1,18 @@
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
-  name: ecommerce-auth-policy
+  name: ecommerce-authorizationpolicy
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: payment
+      app: frontend
   rules:
   - from:
     - source:
-        namespaces: ["foo"]
+        namespaces: ["test"]
     to:
     - operation:
         methods: ["GET"]
-  action: DENY
+  action: ALLOW
   

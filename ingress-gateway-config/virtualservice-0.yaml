@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: my-virtual-service
+  namespace: istio-system
+spec:
+  hosts:
+    - "store4u.georgeoademo.com.ng"
+  gateways:
+    - my-gateway
+  http:
+    - match:
+        - uri:
+            prefix: "/"
+      route:
+        - destination:
+            host: frontend.default.svc.cluster.local
+            port:
+              number: 80
